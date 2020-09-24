@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "outDir": "build",
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "allowUnreachableCode": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "typeRoots": ["./node_modules/@types/", "./@types/"]
+  },
+  "include": ["packages/**/*", "@types"],
+  "exclude": ["node_modules", "applications", "build", "coverage"]
+}

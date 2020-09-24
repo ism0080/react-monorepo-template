@@ -1,0 +1,12 @@
+# Node Files
+node_modules
+
+# Environment
+.env
+
+# Builds
+build
+.webpack
+
+# Lerna 
+lerna-debug.log
