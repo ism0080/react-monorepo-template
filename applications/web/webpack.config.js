@@ -20,11 +20,12 @@ const rootPath = (...args) => args.reduce((fullPath, pathComponent) => path.join
  * @note Some props are injected and some are configuration (rendering) settings
  */
 const htmlPlugin = new HtmlWebPackPlugin({
-  title: 'Project',
+  title: 'Monorepo Project',
   template: rootPath('index.html'),
   filename: 'index.html',
   meta: {
-    viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+    viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+    description: ''
   },
   minify: {
     collapseWhitespace: true,
@@ -152,7 +153,7 @@ module.exports = {
   },
   devServer: {
     publicPath: 'http://localhost:8000',
-    contentBase: rootPath('assets'),
+    contentBase: rootPath('public'),
     open: true,
     lazy: false,
     compress: true,
